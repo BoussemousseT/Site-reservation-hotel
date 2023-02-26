@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel.com | Contact</title>
+    <link rel="stylesheet" href="../style/css/hotel.css">
+    <link rel="shortcut icon" href="../style/image/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="contact">
+        <header>
+            <img src="../style/image/logo.png" alt="Logo">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <!-- <li><a href="../produit/index.html">CHAMBRES & SUITES</a></li> -->
+                <li><a href="../galerie/index.html">GALERIE</a></li>
+                <li><a href="../catalogue/index.html">CATALOGUE</a></li>
+                <li><a href="../tableau/index.html">NOS OFFRES</a></li>
+                <li><a href="../contact/index.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <main>
+            <aside>
+                <form action="../catalogue/index.html">
+                    <fieldset>
+                        <legend>Rechercher:</legend>
+                        <div>
+                            <div>
+                                <label for="destination">Destination</label>
+                            </div>
+                            <div>
+                                <input type="text" id="destination" placeholder="Où allez-vous?" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="dateArriver">Du</label>
+                            </div>
+                            <div>
+                                <input type="date" id="dateArriver" name="dateArriver" min="2022-12-15" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="dateDepart">Au</label>
+                            </div>
+                            <div>
+                                <input type="date" id="dateDepart" name="dateDepart" min="2022-12-16" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="nbPersonne">Nombre de personne</label>
+                            </div>
+                            <div>
+                                <input type="number" id="nbPersonne" name="nbPersonne" value="1" min="1" max="30"
+                                    required>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="submit" value="Rechercher">
+                        </div>
+                    </fieldset>
+                </form>
+            </aside>
+            <div>
+                <form action="Formulaire">
+                    <fieldset>
+                        <legend>CONTACTEZ NOUS</legend>
+                        <div>
+                            <div>
+                                <label for="lname">Prenom :</label>
+                                <input type="text" id="lname" name="Prenom" placeholder="Prenom">
+                            </div>
+
+                            <div>
+                                <label for="fname">Nom :</label>
+                                <input type="text" id="fname" name="Nom" placeholder="Nom">
+                            </div>
+                            <div class="number">
+                                <label>Telephone : </label>
+                                <input type="tel" id="phone" name="phone" placeholder="123-456-6789"
+                                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            </div>
+                        </div>
+                        <div class="civilite">Civilite :
+                            <ul>
+                                <li>
+                                    <input type="radio" name="choix" id="button1" checked>
+                                    <label for="button1">Madame</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="choix" id="button2">
+                                    <label for="button2">Mademoiselle</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="choix" id="button3">
+                                    <label for="button3">Monsieur</label>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="box">De quoi été constitué votre service ?
+                            <!-- <label> De quoi été constitué votre service ?</label> -->
+                            <ul>
+
+                                <li>
+                                    <input type="checkbox" id="box1" name="choixbox" value="valuebox1">
+                                    <label>Espace fumeurs</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="box2" name="choixbox" value="valuebox2">
+                                    <label for="box2">Animal compris</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="box3" name="choixbox" value="valuebox3">
+                                    <label for="box3">Espace insonorisée</label>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div>
+                            <p>De quelle continent venez vous ?</p>
+                            <select name="Continent" id="continents" size="3">
+                                <option>Europe</option>
+                                <option>Amerique</option>
+                                <option>Afrique</option>
+                                <option>Asie</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <p><label>Envoyez nous un message:</label></p>
+                            <textarea placeholder="Ecrivez ici"></textarea>
+                        </div>
+
+                        <div>
+                            <input type="submit" value="SUBMIT">
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="questions">
+                    <fieldset>
+                        <legend>Questions fréquentes:</legend>
+                        <h4>Aide relative au coronavirus</h4>
+                        <h4>Annulations</h4>
+                        <h4>Paiement</h4>
+                        <h4>Communications </h4>
+                        <h4>Types de chambres</h4>
+                        <h4>Tarification</h4>
+                        <h4>Cartes de crédit</h4>
+                        <h4>Conditions de l'établissement</h4>
+                        <h4>Équipements supplémentaires</h4>
+                        <h4>Sensibilisation à la sécurité en ligne</h4>
+                    </fieldset>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <div>
+                    <p>Copyright © 1996–2022 Hotel.com™. Tous droits réservés.</p>
+                </div>
+                <div>
+                    <a href="mailto:contact@hotel.com">Contact@hotel.com</a>
+                </div>
+                <div>
+                    <p>Suivez-nous</p>
+                    <a href="https://www.facebook.com" target="_blank"> <img src="../style/image/facebook.png"
+                            alt="facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank"> <img src="../style/image/instagram.png"
+                            alt="instagram"></a>
+                    <a href="https://www.twitter.com" target="_blank"> <img src="../style/image/twitter.png"
+                            alt="twitter"></a>
+                    <a href="https://www.youtube.com" target="_blank"> <img src="../style/image/youtube.png"
+                            alt="youtube"></a>
+                </div>
+                <div class="maps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d357574.75781338295!2d-73.99206546989454!3d45.55932104954549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2zTW9udHLDqWFsLCBRQw!5e0!3m2!1sfr!2sca!4v1670953254098!5m2!1sfr!2sca"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

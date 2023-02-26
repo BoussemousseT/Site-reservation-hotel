@@ -1,0 +1,560 @@
+/** Sémantique permettant un aspect constant sur toute l'application **/
+@font-face {
+    font-family: roboto;
+    src: url(../roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: robotoRegular;
+    src: url(../roboto/Roboto-Regular.ttf);
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: #003580;
+}
+
+header>img {
+    height: 90px;
+}
+
+nav {
+    background-color: #febb02;
+    margin-left: 310px;
+}
+
+nav>ul>li {
+    display: inline-block;
+    margin: 15px;
+
+}
+
+nav>ul>li>a {
+    font-family: roboto;
+    color: black;
+    text-decoration: unset;
+}
+
+nav>ul>li>a:hover {
+    color: red;
+    border-bottom: 5px solid red;
+}
+
+
+aside {
+    font-family: robotoRegular;
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    top: 95px;
+}
+
+aside>form>fieldset {
+    height: 400px;
+    background-color: #febb02;
+    border: unset;
+}
+
+aside>form>fieldset>legend {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: roboto;
+}
+
+aside>form>fieldset>div {
+    margin: 15px 0px;
+}
+
+aside>form>fieldset>div>div>input {
+    font-family: robotoRegular;
+    padding: 8px;
+    width: 250px;
+    border-radius: 5px;
+    border-color: unset;
+}
+
+aside>form>fieldset>div:last-of-type {
+    text-align: center;
+}
+
+aside>form>fieldset>div>input:hover {
+    background-color: #0988e2;
+    color: black;
+}
+
+aside>form>fieldset>div>input {
+    font-family: roboto;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    background-color: #003580
+}
+
+main {
+    margin-left: 310px;
+    margin-bottom: 80px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #003580;
+}
+
+footer>div {
+    text-align: center;
+}
+
+footer>div>div {
+    display: inline-block;
+    margin: 0px 35px;
+}
+
+footer>div>div>p, footer>div>div>a {
+    font-family: robotoRegular;
+    color: white;
+}
+
+footer>div>div:last-of-type>p {
+    display: inline-block;
+}
+
+footer>div>div>a {
+    text-decoration: unset;
+    vertical-align: middle;
+}
+
+footer>div>div>a:hover {
+    border-bottom: 3px solid white;
+}
+
+footer>div>div>a>img {
+    height: 30px;
+}
+
+/** Page home **/
+
+.home main section>div>h1 {
+    font-family: roboto;
+    margin: 0px;
+    text-align: center;
+}
+
+.home main section>div>p {
+    margin: 10px auto;
+    font-weight: bold;
+    text-align: center;
+    font-family: robotoRegular;
+    width: 90%;
+}
+
+.home main section>.section-page {
+    text-align: center;
+}
+
+.home>main>section>.section-page>div {
+    display: inline-block;
+}
+
+
+.home>main>section>.section-page>div>div>a>img {
+    margin: 0px 10px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.home>main>section>.section-page>div:hover h2 {
+    border-bottom: 5px solid red;
+}
+
+
+.home>main>section>.section-page>div>a>h2 {
+    display: inline-block;
+    font-family: roboto;
+    margin-top: 0px;
+    border-bottom: 5px solid white;
+    color: black;
+    text-decoration: unset;
+}
+
+/** Page galerie **/
+
+.galerie main>.section-page>.proprietes {
+    text-align: center;
+}
+
+.galerie main>.section-page>.proprietes div {
+    display: inline-block;
+    margin: 3px;
+    border: 3px solid white;
+}
+
+.galerie main>.section-page>.proprietes>div:hover {
+    border-radius: 10px;
+    border: 3px solid red;
+}
+
+.galerie main>.section-page>.proprietes div div a img {
+    border-radius: 10px;
+    height: 200px;
+}
+
+.galerie main h1 {
+    margin: 0px;
+    text-align: center;
+    font-family: roboto;
+}
+
+.galerie main p {
+    margin: 10px auto;
+    font-weight: bold;
+    text-align: center;
+    font-family: robotoRegular;
+    width: 90%;
+}
+
+/** Page catalogue **/
+
+.catalogue main>section>.section-page {
+    text-align: center;
+}
+
+.catalogue main>section>.section-page>.image {
+    display: inline-block;
+    border: 3px solid #003580;
+    border-radius: 10px;
+    position: relative;
+    font-family: robotoRegular;
+    width: 450px;
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+}
+
+.catalogue main>section>.section-page>.image>div:first-of-type {
+    padding-right: 5px;
+    float: left;
+}
+
+
+.catalogue main>section>.section-page>.image>h3 {
+    display: inline-block;
+    font-family: roboto;
+    margin: 0px;
+}
+
+.catalogue main>section>.section-page>.image>.proprietes>div {
+    font-weight: bold;
+}
+
+.catalogue main>section>.section-page>.image>.proprietes>p {
+    margin-top: 5px;
+}
+
+.catalogue main>section>.section-page>.image>a {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #003580;
+    text-decoration: unset;
+}
+
+.catalogue main>section>.section-page>.image>div:first-of-type>img {
+    width: 180px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.catalogue main>section>.section-page>.image .proprietes {
+    display: inline-block;
+    width: 260px;
+}
+
+
+/** Page tableau **/
+
+.tableau main>div {
+    text-align: center;
+}
+
+.tableau main>div>div {
+    display: inline-block;
+}
+
+.tableau main>div>div>table {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.tableau main>div>div>table>caption {
+    font-family: roboto;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.tableau main>div>div>table>tbody>tr>td>img {
+    height: 60px;
+}
+
+.tableau main>div>div>table>tbody>tr {
+    background-color: #6bb8ee;
+}
+
+.tableau main>div>div>table>tbody>tr:first-of-type+tr, .tableau main>div>div>table>tbody>tr:first-of-type+tr+tr+tr {
+    background-color: #b5dbf6;
+}
+
+
+.tableau main>div>div>table>tbody>tr>td, .tableau main>div>div>table>thead>tr>th {
+    font-family: robotoRegular;
+    border: 2px solid #003580;
+    font-weight: bold;
+}
+
+.tableau main>div>div>table>thead>tr>th {
+    font-family: roboto;
+    padding: 15px;
+    width: 170px;
+    background-color: #febb02;
+}
+
+/** Page contact **/
+
+.contact main div {
+    text-align: center;
+}
+
+.contact main div form {
+    display: inline-block;
+
+}
+
+.contact main div form fieldset {
+    display: inline-block;
+    border: 3px solid #003580;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.contact main div form fieldset>legend {
+    font-family: roboto;
+}
+
+.contact main div form fieldset>div>label, .contact form fieldset>div>span, .contact form fieldset>div {
+    font-family: robotoRegular;
+    font-weight: bold;
+    text-align: left;
+
+
+}
+
+.contact main div form fieldset>div {
+    margin-bottom: 10px;
+
+}
+
+.contact main div form fieldset>div>div {
+    text-align: left;
+}
+
+
+.contact main div form fieldset div div label {
+    display: inline-block;
+    margin-right: 5px;
+    width: 100px;
+}
+
+.contact main div form fieldset div div input[type=text], .contact form fieldset div div.number input[type=tel] {
+    font-family: robotoRegular;
+    width: 200px;
+    padding: 10px;
+    margin: 2px 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.contact main div form fieldset div.civilite>ul, .contact main form div.box ul {
+    margin: 0px;
+}
+
+.contact main div form fieldset div.civilite>ul>li, .contact main form div.box ul li {
+    display: block;
+}
+
+.contact main div form fieldset div.civilite>ul>li>label, .contact main form div.box ul li label {
+    font-weight: lighter;
+}
+
+.contact main div form fieldset div.box+div>p {
+    margin-bottom: 5px;
+}
+
+.contact main div form fieldset div.box+div>select {
+    width: 230px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact main div form fieldset div.box+div+div>textarea {
+    height: 90px;
+    width: 550px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact main div form fieldset div.box+div+div+div>input:hover {
+    background-color: #0988e2;
+    color: black;
+}
+
+.contact main div form fieldset div.box+div+div+div {
+    text-align: center;
+}
+
+.contact main div form fieldset div.box+div+div+div>input {
+    font-family: roboto;
+    padding: 10px;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    background-color: #003580;
+
+}
+
+.contact main div.questions {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contact main div.questions fieldset {
+    font-family: robotoRegular;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 10px;
+    border: 3px solid #003580;
+}
+
+.contact main div.questions fieldset legend {
+    font-family: roboto;
+}
+
+.contact main div div.questions fieldset h4 {
+    border: 2px solid #003580;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.contact main div div.questions fieldset h4:hover {
+    background-color: #febb02;
+}
+
+.contact footer div div+div+div {
+    vertical-align: middle;
+}
+
+.contact footer div div+div>p {
+    margin: 2px 0px;
+}
+
+.contact footer div.maps iframe {
+    margin-top: 4px;
+    border: unset;
+    height: 70px;
+    border-radius: 10px;
+}
+
+/** Page produit **/
+
+.produit main>section>div {
+    text-align: center;
+}
+
+.produit main>section>div>div:first-of-type, .produit main>section>div>h2, .produit main>section>div>div>p {
+    text-align: left;
+}
+
+.produit main>section>div>h2 {
+    font-family: roboto;
+    margin: 0px;
+}
+
+.produit main>section>div>div:first-of-type {
+    font-family: robotoRegular;
+    margin-bottom: 10px;
+
+}
+
+.produit main>section>div>div>img[src$="localisationhotel.png"] {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.produit main>section>div>div>div>div>img {
+    margin: 3px;
+    height: 220px;
+}
+
+.produit main>section>div>div>div>img[src*="imagehotel3"] {
+    height: 450px;
+    width: 600px;
+    display: inline-block;
+}
+
+.produit main>section>div>div>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.produit main>section>div>input[type=button]:hover {
+    background-color: #0988e2;
+    color: black;
+}
+
+.produit main>section>div>input[type=button] {
+    display: inline-block;
+    font-family: roboto;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    color: white;
+    background-color: #003580;
+    border: unset;
+    margin: 0px;
+}
+
+.produit main>section>div>p {
+    display: inline-block;
+    font-family: roboto;
+    font-style: italic;
+    border-radius: 5px;
+    background-color: #febb02;
+    padding: 9px;
+    width: 100px;
+    margin: 0px;
+}
+
+.produit main>section>div>div>div {
+    margin-left: 5px;
+    font-family: roboto;
+}
+
+.produit main>section>div>div>div>img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+.produit main>section>div>div>p {
+    font-family: robotoRegular;
+}

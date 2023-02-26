@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel.com | Home</title>
+    <link rel="stylesheet" href="style/css/hotel.css">
+    <link rel="shortcut icon" href="style/image/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="home">
+        <header>
+            <img src="style/image/logo.png" alt="Logo">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <!-- <li><a href="./produit/index.html">CHAMBRES & SUITES</a></li> -->
+                <li><a href="./galerie/index.html">GALERIE</a></li>
+                <li><a href="./catalogue/index.html">CATALOGUE</a></li>
+                <li><a href="./tableau/index.html">NOS OFFRES</a></li>
+                <li><a href="./contact/index.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <main>
+            <aside>
+                <form action="./catalogue/index.html">
+                    <fieldset>
+                        <legend>Rechercher:</legend>
+                        <div>
+                            <div>
+                                <label for="destination">Destination</label>
+                            </div>
+                            <div>
+                                <input type="text" id="destination" placeholder="Où allez-vous?" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="dateArriver">Du</label>
+                            </div>
+                            <div>
+                                <input type="date" id="dateArriver" name="dateArriver" min="2022-12-15" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="dateDepart">Au</label>
+                            </div>
+                            <div>
+                                <input type="date" id="dateDepart" name="dateDepart" min="2022-12-16" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <label for="nbPersonne">Nombre de personne</label>
+                            </div>
+                            <div>
+                                <input type="number" id="nbPersonne" name="nbPersonne" value="1" min="1" max="30"
+                                    required>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="submit" value="Rechercher">
+                        </div>
+                    </fieldset>
+                </form>
+            </aside>
+            <section>
+                <div>
+                    <h1>Découvrez les meilleures destinations avec des forfaits vacances</h1>
+                    <p>Découvrez notre sélection des meilleures offres & promos sur des milliers d'hôtels, du luxe à
+                        l'économique. Annulation gratuite sur la plupart des hôtels.</p>
+                </div>
+                <div class="section-page">
+                    <div>
+                        <div>
+                            <a href="./catalogue/index.html"><img src="./style/image/montreal.png" alt="montreal"></a>
+                        </div>
+                        <a href="./catalogue/index.html">
+                            <h2>MONTRÉAL</h2>
+                        </a>
+                    </div>
+
+                    <div>
+                        <div>
+                            <a href="./catalogue/index.html"><img src="./style/image/toronto.png" alt="toronto"></a>
+                        </div>
+                        <a href="./catalogue/index.html">
+                            <h2>TORONTO</h2>
+                        </a>
+                    </div>
+                    <div>
+                        <div>
+                            <a href="./catalogue/index.html"><img src="./style/image/vancouver.png" alt="vancouver"></a>
+                        </div>
+                        <a href="./catalogue/index.html">
+                            <h2>VANCOUVER</h2>
+                        </a>
+                    </div>
+                    <div>
+                        <div>
+                            <a href="./catalogue/index.html"><img src="./style/image/niagara.png" alt="niagara"></a>
+                        </div>
+                        <a href="./catalogue/index.html">
+                            <h2>NIAGARA FALLS</h2>
+                        </a>
+                    </div>
+                    <div>
+                        <div>
+                            <a href="./catalogue/index.html"><img src="./style/image/quebec.png" alt="quebec"></a>
+                        </div>
+                        <a href="./catalogue/index.html">
+                            <h2>QUÉBEC</h2>
+                        </a>
+                    </div>
+                    <div>
+                        <div>
+                            <a href="./catalogue/index.html"><img src="./style/image/ottawa.png" alt="ottawa"></a>
+                        </div>
+                        <a href="./catalogue/index.html">
+                            <h2>OTTAWA</h2>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <div>
+                    <p>Copyright © 1996–2022 Hotel.com™. Tous droits réservés.</p>
+                </div>
+                <div>
+                    <a href="mailto:contact@hotel.com">Contact@hotel.com</a>
+                </div>
+                <div>
+                    <p>Suivez-nous</p>
+                    <a href="https://www.facebook.com" target="_blank"> <img src="./style/image/facebook.png"
+                            alt="facebook"></a>
+                    <a href="https://www.instagram.com" target="_blank"> <img src="./style/image/instagram.png"
+                            alt="instagram"></a>
+                    <a href="https://www.twitter.com" target="_blank"> <img src="./style/image/twitter.png"
+                            alt="twitter"></a>
+                    <a href="https://www.youtube.com" target="_blank"> <img src="./style/image/youtube.png"
+                            alt="youtube"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
